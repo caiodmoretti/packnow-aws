@@ -1,5 +1,5 @@
-# Projeto Programação Web
-> Caio Dutra Moretti - BSI - IFF - 2023.2
+# Infraestrutura com AWS
+> Caio Dutra Moretti - BSI - IFF - 2024.2
 
 
 <p align="left">
@@ -13,8 +13,6 @@
 
 
 
-A proposta desse projeto é criar uma aplicação web para gerênciar a entrada e saída de encomendas em um condomínio.
-Este é um projeto elaborado para a disciplina de Desenvolvimento Web.
 
 ## Instalação / Como começar
 
