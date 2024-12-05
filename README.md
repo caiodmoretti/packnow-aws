@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # Infraestrutura com AWS
 > Caio Dutra Moretti - BSI - IFF - 2024.2
 
