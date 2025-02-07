@@ -12,8 +12,8 @@
 	<groupId>br.edu.iff</groupId>
 	<artifactId>PackNow</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ApiRest</name>
-	<description>Projeto para discipla Desenvolvimento Web</description>
+	<name>PackNow App</name>
+	<description>Projeto para discipla AWS</description>
 
 	<properties>
 		<java.version>17</java.version>
