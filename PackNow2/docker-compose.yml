@@ -1,14 +1,13 @@
-
 services:
   postgres:
     image: postgres
-    container_name: ${POSTGRES_HOST}  # Usa o nome do host do .env
+    container_name: ${POSTGRES_HOST}  # Pode manter isso, se você desejar um nome de container dinâmico
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
     ports:
-      - "${POSTGRES_PORT}:5432"  # Usa a porta do .env
+      - "${POSTGRES_PORT}:5432"
     networks:
       - network_packnow
     healthcheck:
@@ -21,7 +20,7 @@ services:
     image: caiodmoretti/packnow:1.0
     container_name: container_packnow
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:${POSTGRES_PORT}/${POSTGRES_DB}  # Corrigido o host
       SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
       SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
